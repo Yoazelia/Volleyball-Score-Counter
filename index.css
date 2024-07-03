@@ -1,6 +1,6 @@
 /* Set the background color for the entire HTML page */
 html, body {
-    background-color: #0369A1;  /* Change this color to your desired background color */
+    background-color: #0369A1; /* Light blue background color */
     height: 100%;
     margin: 0;
     font-family: Arial, sans-serif;
@@ -12,18 +12,65 @@ body {
 }
 
 .score {
-    background: #0a0001;
+    background: #0a0001; /* Black background for the score display */
     font-size: 90px;
-    color: #F94F6D;
+    color: #F94F6D; /* Red color for the score */
     width: 120px;
-    margin: 20px;
+    margin: 20px auto;
 }
 
 .container {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Add some gap between the columns */
 }
 
-button {
-    background-color: #3498db;
+.column {
+    text-align: center;
+    color: white; /* White color for the text */
+    margin: 0 10px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.buttons button {
+    background-color: #3498db; /* Blue background for the buttons */
+    border: none;
+    color: white; /* White text color for the buttons */
+    padding: 10px;
+    margin: 0 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.buttons button:hover {
+    background-color: #2980b9; /* Darker blue for button hover effect */
+}
+
+/* Style for reset button */
+.reset-column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#reset-btn {
+    background-color: #e74c3c; /* Red background for the reset button */
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    margin: 0 20px; /* Ensure there's some space around the reset button */
+}
+
+#reset-btn:hover {
+    background-color: #c0392b; /* Darker red for hover effect */
 }
